@@ -1,0 +1,62 @@
+.employees {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.employee {
+    background-color: #2229e8;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.employee-image {
+    width: 180px;
+    border: solid 6px #fff;
+    border-radius: 100%;
+    margin: 20px;
+    float: left;
+}
+
+.employee-info {
+    margin-top: 60px;
+}
+
+.employee-desc {
+    background-color: #fff;
+    color: #000;
+    padding: 20px 50px;
+    margin: 0;
+    clear: both;
+}
+
+.employee-name {
+    font-size: 2em;
+}
+
+.employee-job {
+    font-size: 1.25em;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .employees {
+        width: 60%;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+    
+    .employees {
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .employees {
+        width: 100%;
+    }
+    
+}

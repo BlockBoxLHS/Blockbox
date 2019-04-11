@@ -1,0 +1,243 @@
+/* general */
+.header-btn {
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5em;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header-btn a {
+    color: #000;
+}
+
+.header-btn:hover {
+    background-color: #bbb;
+}
+
+.header-btn-secondary {
+    font-size: 1.5em;
+    padding: 5px 15px;
+    margin: 5px 5px;
+    color: #fff;
+    border-right: solid 1px white;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 
+        background-color 0.25s,
+        color 0.25s,
+        border-right 0.25s
+    ;
+}
+
+.header-btn-secondary-last {
+    border: none;
+}
+
+.header-btn-secondary:hover {
+    font-size: 1.5em;
+    padding: 5px 15px;
+    margin: 5px 5px;
+    background-color: #fff;
+    color: #000;
+    border-right: solid 1px white;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 
+        background-color 0.25s,
+        color 0.25s,
+        border-right 0.25s
+    ;
+}
+
+.header-btn-secondary a {
+    color: #fff;
+}
+
+.header-btn-secondary:hover a {
+    color: #000;
+}
+
+/* header */
+#header {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+#header-top {
+    width: 100%;
+    background-color: #2229e8;
+    padding-bottom: 20px;
+}
+
+#header-logo {
+    width: 200px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#header-search {
+    width: 35%;
+    padding: 12px 10px;
+    border: none;
+    display: inline-flex;
+    position: absolute;
+    top: 50px;
+    left: 30%;
+}
+
+/* header top buttons */
+#header-top-buttons-div {
+    float: right;
+    width: 15%;
+    margin: 35px 210px;
+}
+
+#header-top-buttons {
+    text-align: center;
+    padding: 0;
+}
+
+#header-top-buttons li {
+    margin: auto 5px;
+}
+
+#header-cart {
+    width: 3.5%;
+    float: right;
+    clear: both;
+    position: relative;
+    bottom: 100px;
+    right: 80px;
+    filter: invert(100%);
+    min-width: 60px;
+    cursor: pointer;
+}
+
+#header-cart:hover {
+    filter: invert(80%);
+}
+
+/* header bottom */
+
+#header-bottom {
+    width: 100%;
+    background-color: #022287;
+}
+
+#cat-btns {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    position: relative;
+    left: 22.5%;
+    width: 50%;
+}
+
+/* media queries */
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+    #header-top-buttons-div {
+        float: right;
+        width: 35%;
+        margin: 35px 75px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1260px) {
+    #header-top-buttons-div {
+        float: right;
+        width: 35%;
+        margin: 35px 80px;
+    }
+    
+    #header-search {
+        width: 30%;
+        top: 5%;
+        left: 27.5%;
+    }
+    
+    #header-cart {
+        right: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    #header-cart {
+        float: none;
+        position: static;
+        margin-left: 46%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #header-logo {
+        margin-left: 35%;
+    }
+    
+    #header-top-buttons-div {
+        float: none;
+        margin: 0 auto;
+        width: 45%;
+    }
+    
+    #header-search {
+        position: relative;
+        display: block;
+        top: 5%;
+        width: 50%;
+        left: 25%;
+    }
+    
+    #header-cart {
+        float: none;
+        position: static;
+        margin-left: 45%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #header-logo {
+        margin-left: 30%;
+    }
+    
+    #header-top-buttons-div {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    #header-search {
+        position: relative;
+        display: block;
+        width: 80%;
+        left: 10%;
+    }
+    
+    #header-cart {
+        float: none;
+        position: static;
+        margin-left: 42.5%;
+    }
+    
+    .header-btn-secondary {
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #header-logo {
+        margin-left: 15%;
+    }
+    
+    #header-cart {
+        float: none;
+        position: static;
+        margin-left: 35%;
+    }
+}

@@ -1,0 +1,135 @@
+/* general */
+.products-container {
+    background-color: #fff;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.products-subcontainer {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.products-title {
+    background-color: #2229e8;
+    margin-bottom: 40px;
+}
+
+.products-title h2 {
+    font-size: 2em;
+    padding: 4px 12px;
+    margin: 0;
+}
+
+/* product specific */
+.products-container-items {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.product-li {
+    display: inline-block;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.product {
+    width: 100%;
+    background-color: #2229e8;
+    border: solid 3px #2229e8;
+}
+
+.product-visual {
+    margin-bottom: 5px;
+}
+
+.product-tags {
+    padding: 0;
+}
+
+.product-image {
+    width: auto;
+    height: auto;
+    max-width: 240px;
+    max-height: 240px;
+    min-width: 240px;
+    min-height: 240px;
+}
+
+.product-info {
+    margin-bottom: 20px;
+}
+
+.product-info-list li {
+    padding-left: 4px;
+}
+
+.product-rating {
+    padding-bottom: 20px;
+}
+
+.product-info-list,
+.product-cart-list {
+    padding: 0;
+}
+
+.product-cart {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-cart-list {
+    width: 100%;
+}
+
+.product-cart-list li {
+    display: inline-block;
+    padding: 4px 12px;
+
+}
+
+.product-quantity {
+    text-align: left;
+    border-right: solid 2px #2229e8;
+}
+
+.product-quantity input[type="number"] {
+    width: 60px;
+}
+
+.product-add {
+    width: 60%;
+}
+
+@media only screen and (max-width: 1080px) {
+    
+    .products-container-items {
+        display: block;
+        columns: 3;
+        overflow-x: hidden;
+        columns: auto;
+        -moz-colums: auto;
+        text-align: center;
+    }
+    
+    .product-li {
+        padding-bottom: 20px;
+    }
+    
+    .products-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    
+    .products-container {
+        width: 90%;
+    }
+    
+}

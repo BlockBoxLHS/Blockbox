@@ -1,0 +1,61 @@
+.login-form {
+    background-color: #fff;
+    color: #000;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.login-form-title {
+    color: #fff;
+    background-color: #2229e8;
+    padding: 4px 12px;
+    text-align: center;
+}
+
+.login-form-info {
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.login-form-info input[type="text"],
+.login-form-info input[type="email"],
+.login-form-info input[type="password"] {
+    padding: 4px 8px;
+    margin-bottom: 10px;
+}
+
+.login-form-info input[type="submit"] {
+    text-align: center;
+    margin-top: 30px;
+    padding: 5px 20px;
+    background-color: #2229e8;
+    color: #fff;
+    border: none;
+}
+
+.login-form-extra {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #2229e8;
+}
+
+.login-form-confirm,
+.forgot-form-sent {
+    padding: 10px 0;
+}
+
+.login-form-confirm p,
+.forgot-form p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+ 
+    .login-form {
+        width: 70%;   
+    }
+    
+}
